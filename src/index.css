@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Colors - Light Theme */
+  --ui-primary: #3b82f6;
+  --ui-primary-strong: #2563eb;
+  --ui-primary-soft: #dbeafe;
+  --ui-background: #ffffff;
+  --ui-surface: #f9fafb;
+  --ui-surface-muted: #f3f4f6;
+  --ui-text: #111827;
+  --ui-muted: #6b7280;
+  --ui-border: #e5e7eb;
+  --ui-success: #10b981;
+  --ui-danger: #ef4444;
+  --ui-warning: #f59e0b;
+  --ui-info: #3b82f6;
+  --ui-inverse: #ffffff;
+  --ui-overlay: rgba(0, 0, 0, 0.5);
+
+  /* Border Radius */
+  --ui-radius-sm: 0.375rem;
+  --ui-radius-md: 0.5rem;
+  --ui-radius-lg: 0.75rem;
+  --ui-radius-xl: 1rem;
+
+  /* Box Shadow */
+  --ui-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --ui-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --ui-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Fonts */
+  --ui-font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --ui-font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+.dark {
+  /* Colors - Dark Theme */
+  --ui-primary: #60a5fa;
+  --ui-primary-strong: #3b82f6;
+  --ui-primary-soft: #1e3a8a;
+  --ui-background: #0f172a;
+  --ui-surface: #1e293b;
+  --ui-surface-muted: #334155;
+  --ui-text: #f1f5f9;
+  --ui-muted: #94a3b8;
+  --ui-border: #334155;
+  --ui-success: #34d399;
+  --ui-danger: #f87171;
+  --ui-warning: #fbbf24;
+  --ui-info: #60a5fa;
+  --ui-inverse: #0f172a;
+  --ui-overlay: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  margin: 0;
+  font-family: var(--ui-font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--ui-background);
+  color: var(--ui-text);
+}
+
+* {
+  box-sizing: border-box;
+}
